@@ -1,0 +1,125 @@
+#Used in Madnewmy's pack Spinnning Up
+
+#Remove Import/Export bus - OK
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:260>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:240>);
+#skystone - OK
+furnace.addRecipe(<appliedenergistics2:tile.BlockSkyStone>, <appliedenergistics2:item.ItemMultiMaterial:45>);
+#presses - OK
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:19>, [<minecraft:iron_block>, <ore:itemSilicon>]);
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:15>, [<minecraft:iron_block>, <minecraft:gold_ingot>]);
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:14>, [<minecraft:iron_block>, <minecraft:diamond>]);
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:13>, [<minecraft:iron_block>, <appliedenergistics2:item.ItemMultiMaterial>]);
+#pack balance remove Blocks - OK
+recipes.remove(<appliedenergistics2:tile.BlockEnergyAcceptor>);
+recipes.remove(<appliedenergistics2:tile.BlockInterface>);
+recipes.remove(<appliedenergistics2:tile.BlockChest>);
+recipes.remove(<appliedenergistics2:tile.BlockDrive>);
+recipes.remove(<appliedenergistics2:tile.BlockInscriber>);
+recipes.remove(<appliedenergistics2:tile.BlockController>);
+recipes.remove(<appliedenergistics2:tile.BlockEnergyCell>);
+recipes.remove(<appliedenergistics2:tile.BlockQuartzGrowthAccelerator>);
+recipes.remove(<appliedenergistics2:tile.BlockCraftingUnit>);
+recipes.remove(<appliedenergistics2:tile.BlockMolecularAssembler>);
+recipes.remove(<appliedenergistics2:tile.BlockCharger>);
+recipes.remove(<appliedenergistics2:tile.BlockQuartzGlass>);
+recipes.remove(<appliedenergistics2:tile.BlockQuantumRing>);
+recipes.remove(<appliedenergistics2:tile.BlockCondenser>);
+#pack balance add blocks - OK
+recipes.addShaped(<appliedenergistics2:tile.BlockEnergyAcceptor>,
+ [[<RotaryCraft:rotarycraft_item_compacts:6>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_item_compacts:6>],
+  [<appliedenergistics2:tile.BlockQuartzGlass>, <ElectriCraft:electricraft_item_crystal:2>, <appliedenergistics2:tile.BlockQuartzGlass>],
+  [<RotaryCraft:rotarycraft_item_compacts:6>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_item_compacts:6>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockInterface>,
+ [[<RotaryCraft:rotarycraft_item_compacts:6>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_item_compacts:6>],
+  [<appliedenergistics2:item.ItemMultiMaterial:44>, null, <appliedenergistics2:item.ItemMultiMaterial:43>],
+  [<RotaryCraft:rotarycraft_item_compacts:6>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_item_compacts:6>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockChest>,
+ [[<appliedenergistics2:tile.BlockQuartzGlass>, <appliedenergistics2:item.ItemMultiPart:160>, <appliedenergistics2:tile.BlockQuartzGlass>],
+  [<appliedenergistics2:item.ItemMultiMaterial:16>, <RotaryCraft:rotarycraft_item_machine:58>, <appliedenergistics2:item.ItemMultiMaterial:16>],
+  [<RotaryCraft:rotarycraft_item_compacts:6>, <ore:crystalFluix>, <RotaryCraft:rotarycraft_item_compacts:6>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockDrive>,
+ [[<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:item.ItemMultiMaterial:24>, <RotaryCraft:rotarycraft_item_compacts:5>],
+  [<appliedenergistics2:item.ItemMultiMaterial:16>, null, <appliedenergistics2:item.ItemMultiMaterial:16>],
+  [<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:item.ItemMultiMaterial:24>, <RotaryCraft:rotarycraft_item_compacts:5>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockInscriber>,
+ [[<RotaryCraft:rotarycraft_item_compacts:6>, <minecraft:sticky_piston>, <RotaryCraft:rotarycraft_item_compacts:6>],
+  [<ore:crystalFluix>, null, <RotaryCraft:rotarycraft_item_compacts:6>],
+  [<RotaryCraft:rotarycraft_item_compacts:6>, <minecraft:sticky_piston>, <RotaryCraft:rotarycraft_item_compacts:6>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockController>,
+ [[<appliedenergistics2:tile.BlockSkyStone:1>, <appliedenergistics2:item.ItemMultiMaterial:12>, <appliedenergistics2:tile.BlockSkyStone:1>],
+  [<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:item.ItemMultiMaterial:24>, <RotaryCraft:rotarycraft_item_compacts:5>],
+  [<appliedenergistics2:tile.BlockSkyStone:1>, <appliedenergistics2:item.ItemMultiMaterial:12>, <appliedenergistics2:tile.BlockSkyStone:1>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockEnergyCell>,
+ [[<RotaryCraft:rotarycraft_item_compacts:6>, <appliedenergistics2:item.ItemMultiMaterial:8>, <appliedenergistics2:tile.BlockSkyStone>],
+  [<appliedenergistics2:item.ItemMultiMaterial:8>, <ElectriCraft:electricraft_item_crystal:2>, <appliedenergistics2:item.ItemMultiMaterial:8>],
+  [<appliedenergistics2:tile.BlockSkyStone>, <appliedenergistics2:item.ItemMultiMaterial:8>, <RotaryCraft:rotarycraft_item_compacts:6>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockQuartzGrowthAccelerator>,
+ [[<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_item_compacts:5>],
+  [<RotaryCraft:rotarycraft_item_compacts:3>, <appliedenergistics2:tile.BlockFluix>, <RotaryCraft:rotarycraft_item_compacts:3>],
+  [<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:item.ItemMultiMaterial:16>, <RotaryCraft:rotarycraft_item_compacts:5>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockCraftingUnit>,
+ [[<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:item.ItemMultiMaterial:23>, <RotaryCraft:rotarycraft_item_compacts:5>],
+  [<appliedenergistics2:item.ItemMultiMaterial:22>, <minecraft:crafting_table>, <appliedenergistics2:item.ItemMultiMaterial:22>],
+  [<RotaryCraft:rotarycraft_item_compacts:6>, <appliedenergistics2:item.ItemMultiMaterial:23>, <RotaryCraft:rotarycraft_item_compacts:6>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockMolecularAssembler>,
+ [[<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_item_compacts:5>],
+  [<appliedenergistics2:item.ItemMultiMaterial:44>, <minecraft:crafting_table>, <appliedenergistics2:item.ItemMultiMaterial:43>],
+  [<RotaryCraft:rotarycraft_item_compacts:6>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_item_compacts:6>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockCharger>,
+ [[<RotaryCraft:rotarycraft_item_shaftcraft:1>, <ore:crystalFluix>, <RotaryCraft:rotarycraft_item_shaftcraft:1>],
+  [<RotaryCraft:rotarycraft_item_shaftcraft:1>, null, null],
+  [<RotaryCraft:rotarycraft_item_shaftcraft:1>, <ore:crystalFluix>, <RotaryCraft:rotarycraft_item_shaftcraft:1>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockQuartzGlass>,
+ [[<RotaryCraft:rotarycraft_item_powders:1>, <RotaryCraft:rotarycraft_block_blastglass>, <RotaryCraft:rotarycraft_item_powders>],
+  [<RotaryCraft:rotarycraft_block_blastglass>, null, <RotaryCraft:rotarycraft_block_blastglass>],
+  [<RotaryCraft:rotarycraft_item_powders>, <RotaryCraft:rotarycraft_block_blastglass>, <RotaryCraft:rotarycraft_item_powders:1>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockQuantumRing>,
+ [[<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:item.ItemMultiMaterial:24>, <RotaryCraft:rotarycraft_item_compacts:5>],
+  [<RotaryCraft:rotarycraft_item_compacts:3>, <appliedenergistics2:tile.BlockDenseEnergyCell>, <appliedenergistics2:item.ItemMultiMaterial:75>],
+  [<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:item.ItemMultiMaterial:24>, <RotaryCraft:rotarycraft_item_compacts:5>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockCondenser>,
+ [[<RotaryCraft:rotarycraft_item_compacts:6>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_item_compacts:6>],
+  [<appliedenergistics2:tile.BlockQuartzGlass>, <appliedenergistics2:item.ItemMultiMaterial:8>, <appliedenergistics2:tile.BlockQuartzGlass>],
+  [<RotaryCraft:rotarycraft_item_compacts:6>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_item_compacts:6>]]);
+
+#Pack balance ItemMultiPart - OK
+
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:16>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:36>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:56>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:76>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:140>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:460>);
+
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:16> * 6, [<appliedenergistics2:item.ItemMultiPart:140>, <RotaryCraft:rotarycraft_item_compacts:6>, <ore:crystalFluix>, <ore:crystalFluix>]);
+
+recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:36> * 2,
+ [[<appliedenergistics2:item.ItemMultiPart:16>, <minecraft:wool:*>, <appliedenergistics2:item.ItemMultiPart:16>],
+  [null, <appliedenergistics2:item.ItemMultiPart:140>, null]]);
+
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:56> * 2, [<appliedenergistics2:item.ItemMultiPart:36>, <RotaryCraft:rotarycraft_item_powders:12>, <minecraft:glowstone_dust>, <ElectriCraft:electricraft_item_crafting>]);
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:76> * 2, [<appliedenergistics2:item.ItemMultiPart:36>, <appliedenergistics2:item.ItemMultiPart:36>, <appliedenergistics2:item.ItemMultiPart:36>, <appliedenergistics2:item.ItemMultiPart:36>, <appliedenergistics2:item.ItemMultiPart:36>, <appliedenergistics2:item.ItemMultiPart:36>, <RotaryCraft:rotarycraft_item_powders:12>, <minecraft:glowstone_dust>, <ElectriCraft:electricraft_item_crafting>]);
+
+recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:140> * 4,
+ [[<RotaryCraft:rotarycraft_block_blastglass>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_block_blastglass>],
+  [<ore:dustNetherQuartz>, <RotaryCraft:rotarycraft_item_powders:12>, <ore:dustCertusQuartz>],
+  [<RotaryCraft:rotarycraft_block_blastglass>, <appliedenergistics2:tile.BlockQuartzGlass>, <RotaryCraft:rotarycraft_block_blastglass>]]);
+
+recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:460>,
+ [[<RotaryCraft:rotarycraft_block_blastglass>, <RotaryCraft:rotarycraft_item_compacts:3>, <RotaryCraft:rotarycraft_block_blastglass>],
+  [<RotaryCraft:rotarycraft_item_compacts:5>, <appliedenergistics2:item.ItemMultiMaterial:24>, <RotaryCraft:rotarycraft_item_compacts:5>],
+  [<appliedenergistics2:item.ItemMultiMaterial:12>, <appliedenergistics2:tile.BlockQuartzGlass>, <appliedenergistics2:item.ItemMultiMaterial:12>]]);
